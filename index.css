@@ -14,55 +14,114 @@
 }
 
 body {
-    max-width: 1100px;
     margin: auto;
-    background: rgb(251,211,27);
-    background: linear-gradient(90deg, rgba(238,84,12,1) 0%, rgba(253,149,29,1) 33%, rgba(251,211,27) 100%);
+    max-width: 1000px;
 }
 
-body .argentum {
+/* none nav border */
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(./img/Artboard_17-512.png);
+    height: 20px;
+}
+
+/* style lety */
+body nav a .argentum {
     font-family: 'Argentum-Sans-Black-Italic';
 }
 
-section h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 15px;
+body > nav > a > h1 {
+    font-size: 1.2em;
+    margin-bottom: 0px;
 }
 
-section h1 span {
-    color: white;
+body > nav > a > h1 > span {
+    color: #FBD31B;
 }
 
-body > div > ul > li {
+#navbarNav > ul > li > a {
     font-family: 'Montserrat-Regular';
-    padding: 3px 0px 3px 0px;
-    color: white;
-    list-style: none;
-    font-size: 1.5em ;
-    text-align: center;
 }
 
-body > div > ul > li:nth-child(1) {
-    padding-bottom: 10px;
-    font-weight: 600;
-}
-
-body > div > ul > li > a {
-    cursor: pointer;
-}
-
-footer div p {
-    position: fixed;
-    /* Фиксированное положение */
-    left: 0;
-    bottom: 0;
-    /* Левый нижний угол */
-    text-align: center;
-    padding: 10px;
-    /* Поля вокруг текста */
-    background: rgba(0,0,0,0.6);
-    color: #fff;
+/* carousel */
+.carousel-inner {
     width: 100%;
-    /* Ширина слоя */
+    max-height: 500px !important;
+}
+
+/* products */
+body > section > h3 {
+    font-family: 'Montserrat-Regular';
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+body > section > div .card {
+    border: none;
+    width: 18rem;
+}
+
+body > section > div > div > div {
+    padding: 10px 5px 0px px !important;
+}
+
+body > section > div > div > div > p.card-text {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.86rem;
+}
+
+body > section > div > div > div > p {
+    color: #282D32;
+}
+
+/* footer */
+footer {
+    background: #282D32;
+}
+
+body > footer > div:nth-child(1) > h1 {
+    padding-top: 10px;
+}
+
+body > footer > div:nth-child(2) > ul {
+    padding-left: 0px;
+}
+
+footer div:nth-child(2) ul li {
+    color: #FFFFFF;
+    list-style-type: none;
+    text-align: center;
+}
+
+body > footer > div:nth-child(2) > ul > li:nth-child(1) {
+    font-size: 1.5em;
+    padding-bottom: 7px;
+}
+
+footer div:nth-child(1) .argentum-foo {
+    font-family: 'Argentum-Sans-Black-Italic';
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+footer div:nth-child(1) .argentum-foo span {
+    color: #FBD31B;
+}
+
+footer > div:nth-child(3) > p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer > div:nth-child(3) > p > img {
+    padding-bottom: 4px;
+    width: 13px;
 }
